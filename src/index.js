@@ -8,14 +8,11 @@ import middleware from './middleware';
 import details from './api/details';
 import config from './config.json';
 import fs from 'fs';
-//import sio from 'socket.io';
-import WebSocket from 'ws';
 
 
 let app = express();
 let server = http.createServer(app);
 app.server = server;
-let wss = new WebSocket.Server({ server });
 
 // logger
 app.use(morgan('dev'));
