@@ -1,0 +1,34 @@
+[
+    {
+        "defaultService" : "BAR",
+        "email" : "post.clerk@hmcts.net",
+        "forename" : "Chris",
+        "id" : 365750,
+        "roles" : ["bar-post-clerk"],
+        "surname" : "Spencer"
+    },
+    {
+        "defaultService" : "BAR",
+        "email" : "fee.clerk@hmcts.net",
+        "forename" : "Karen",
+        "id" : 365751,
+        "roles" : ["bar-fee-clerk"],
+        "surname" : "Taylor"
+    },
+    {
+        "defaultService" : "BAR",
+        "email" : "seniorfee.clerk@hmcts.net",
+        "forename" : "James",
+        "id" : 365752,
+        "roles" : ["bar-senior-clerk"],
+        "surname" : "Black"
+    },
+    {
+        "defaultService" : "BAR",
+        "email" : "delivery.manager@hmcts.net",
+        "forename" : "Dee",
+        "id" : 365753,
+        "roles" : ["bar-delivery-manager"],
+        "surname" : "Aliu"
+    }
+]
