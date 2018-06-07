@@ -13,4 +13,5 @@ in the same format as idam would give it.
     "surname" : "Spencer"
 }
 ```
-The users can be found in /resources/users.json and it should be in sync with the test users in bar-web.
+The users can be found in /resources/users.json and it should be in sync with the test users in bar-web.  
+Now it also contains a /fees endpoint to mock fees-register api.
