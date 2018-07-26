@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Express HTML</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div style="margin:100px;">
+      <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">BAR mock idam login</a>
+    </div>
+  </nav>
+      <div class="jumbotron"  style="padding:40px;">
+        <ul>
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $.urlParam = function (name) {
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.search);
+        return (results !== null) ? results[1] || 0 : false;
+      }
+      $(function() {
+        var redirect_uri = decodeURIComponent($.urlParam('redirect_uri'));
+        var state = $.urlParam('state');
+        $('ul').append($('<li><a href="' + redirect_uri + '?state=' + state + '&code=post.clerk@hmcts.net' + '">post-clerk</a></li>'));
+        $('ul').append($('<li><a href="' + redirect_uri + '?state=' + state + '&code=fee.clerk@hmcts.net' + '">fee-clerk</a></li>'));
+        $('ul').append($('<li><a href="' + redirect_uri + '?state=' + state + '&code=seniorfee.clerk@hmcts.net' + '">senior-clerk</a></li>'));
+        $('ul').append($('<li><a href="' + redirect_uri + '?state=' + state + '&code=delivery.manager@hmcts.net' + '">delivery-manager</a></li>'));
+      });
+    </script>
+  </body>
+</html>

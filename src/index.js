@@ -26,6 +26,8 @@ app.use(bodyParser.json({
 	limit : config.bodyLimit
 }));
 
+app.use(bodyParser.urlencoded());
+
 // connect to db
 initializeDb( db => {
 
