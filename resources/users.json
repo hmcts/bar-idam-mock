@@ -9,11 +9,27 @@
     },
     {
         "defaultService" : "BAR",
+        "email" : "barpreprodpostclerk@mailinator.com",
+        "forename" : "Anjani",
+        "id" : 365757,
+        "roles" : ["bar-post-clerk"],
+        "surname" : "PostClerk"
+    },
+    {
+        "defaultService" : "BAR",
         "email" : "fee.clerk@hmcts.net",
         "forename" : "Karen",
         "id" : 365751,
         "roles" : ["bar-fee-clerk"],
         "surname" : "Taylor"
+    },
+    {
+        "defaultService" : "BAR",
+        "email" : "barpreprodfeeclerk@mailinator.com",
+        "forename" : "Anish",
+        "id" : 365758,
+        "roles" : ["bar-fee-clerk"],
+        "surname" : "feeclerk"
     },
     {
         "defaultService" : "BAR",
@@ -25,10 +41,34 @@
     },
     {
         "defaultService" : "BAR",
+        "email" : "barpreprodsrfeeclerk@mailinator.com",
+        "forename" : "krishna",
+        "id" : 365759,
+        "roles" : ["bar-senior-clerk"],
+        "surname" : "Srfeeclerk"
+    },
+    {
+        "defaultService" : "BAR",
         "email" : "delivery.manager@hmcts.net",
         "forename" : "Dee",
         "id" : 365753,
         "roles" : ["bar-delivery-manager"],
         "surname" : "Aliu"
+    },
+    {
+        "defaultService" : "BAR",
+        "email" : "seniorfee.clerk2@hmcts.net",
+        "forename" : "James2",
+        "id" : 365756,
+        "roles" : ["bar-senior-clerk"],
+        "surname" : "Black2"
+    },
+    {
+        "defaultService" : "BAR",
+        "email" : "barpreprod@mailinator.com",
+        "forename" : "PreProd",
+        "id" : 365760,
+        "roles" : ["bar-delivery-manager"],
+        "surname" : "Admin"
     }
 ]
