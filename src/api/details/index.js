@@ -57,9 +57,26 @@ export default ({ config, db }) => {
     res.sendFile(path.join(appDir, '/resources/login.html'));
   })
 
+  api.get('/login/logout', (req, res) => {
+    res.redirect("https://localhost:3000/login");
+  })
+
   api.post('/oauth2/token', (req, res) => {
     console.log(req.body);
     res.json({access_token: req.body.code});
+  });
+
+  api.post('/lease', (req, res) => {
+    res.send('eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbWMiLCJleHAiOjE1MzMyMzc3NjN9.3iwg2cCa1_G9-TAMupqsQsIVBMWg9ORGir5xZyPhDabk09Ldk0-oQgDQq735TjDQzPI8AxL1PgjtOPDKeKyxfg[akiss@reformMgmtDevBastion02');
+  });
+
+  api.post('/payment-records', (req, res) => {
+    res.status(201).send({
+      "reference": "RC-1534-8634-8352-6509",
+      "date_created": "2018-08-21T14:58:03.630+0000",
+      "status": "Initiated",
+      "payment_group_reference": "2018-15348634835"
+    });
   });
 
   return api;
