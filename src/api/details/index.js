@@ -71,12 +71,23 @@ export default ({ config, db }) => {
   });
 
   api.post('/payment-records', (req, res) => {
-    res.status(201).send({
-      "reference": "RC-1534-8634-8352-6509",
-      "date_created": "2018-08-21T14:58:03.630+0000",
-      "status": "Initiated",
-      "payment_group_reference": "2018-15348634835"
-    });
+    console.log(req.body.payment_method);
+    if (req.body.payment_method === 'ALLPAY'){
+      res.status(400).send({
+        "timestamp": "2018-09-04T15:37:18.914+0000",
+        "status": 400,
+        "error": "Bad Request",
+        "message": "JSON parse error: Cannot deserialize value of type `uk.gov.hmcts.payment.api.util.PaymentMethodType` from String \"ALLPAY\": value not one of declared Enum instance names: [CARD, CHEQUE, CASH, POSTAL_ORDER, BARCLAY_CARD, PBA]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `uk.gov.hmcts.payment.api.util.PaymentMethodType` from String \"ALLPAY\": value not one of declared Enum instance names: [CARD, CHEQUE, CASH, POSTAL_ORDER, BARCLAY_CARD, PBA]\n at [Source: (PushbackInputStream); line: 3, column: 21] (through reference chain: uk.gov.hmcts.payment.api.dto.PaymentRecordRequest[\"payment_method\"])",
+        "path": "/payment-records"
+      });
+    } else {
+      res.status(200).send({
+        "reference": "RC-1534-8634-8352-6509",
+        "date_created": "2018-08-21T14:58:03.630+0000",
+        "status": "Initiated",
+        "payment_group_reference": "2018-15348634835"
+      });
+    }
   });
 
   return api;
