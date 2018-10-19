@@ -89,6 +89,22 @@ export default ({ config, db }) => {
       });
     }
   });
+  
+  api.get('/jurisdictions1', (req,res) => {
+    fs.readFile('./resources/jurisdiction1.json', function (err, data) {
+      if (err) throw err;
+      let fees = JSON.parse(data);
+      res.json(fees);
+    });
+  });
+
+  api.get('/jurisdictions2', (req,res) => {
+    fs.readFile('./resources/jurisdiction2.json', function (err, data) {
+      if (err) throw err;
+      let fees = JSON.parse(data);
+      res.json(fees);
+    });
+  });
 
   return api;
 };
