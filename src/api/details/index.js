@@ -9,7 +9,7 @@ export default ({ config, db }) => {
   api.get('/details', (req, res) => {
     let token = req.header('Authorization');
     if (token && token.startsWith('Bearer ')){
-      token = token.substring(7, token.length);
+      token = decodeURIComponent(token.substring(7, token.length));
     }
     console.log('token:' + token);
     const user = db.find(token);
@@ -58,7 +58,7 @@ export default ({ config, db }) => {
   })
 
   api.get('/login/logout', (req, res) => {
-    res.redirect("https://localhost:3000/login");
+    res.redirect("http://localhost:3000/login");
   })
 
   api.post('/oauth2/token', (req, res) => {
