@@ -1,162 +1,212 @@
 [
-    {
-        "defaultService" : "BAR",
-        "email" : "post.clerk@hmcts.net",
-        "forename" : "Chris",
-        "id" : 365750,
-        "roles" : ["bar-post-clerk"],
-        "surname" : "Spencer"
-    },
-    {
-        "defaultService" : "BAR",
-        "email" : "barpreprodpostclerk@mailinator.com",
-        "forename" : "Anjani",
-        "id" : 365757,
-        "roles" : ["bar-post-clerk"],
-        "surname" : "PostClerk"
-    },
-    {
-        "defaultService" : "BAR",
-        "email" : "fee.clerk@hmcts.net",
-        "forename" : "Karen",
-        "id" : 365751,
-        "roles" : ["bar-fee-clerk"],
-        "surname" : "Taylor"
-    },
-    {
-        "defaultService" : "BAR",
-        "email" : "barpreprodfeeclerk@mailinator.com",
-        "forename" : "Anish",
-        "id" : 365758,
-        "roles" : ["bar-fee-clerk"],
-        "surname" : "feeclerk"
-    },
-    {
-        "defaultService" : "BAR",
-        "email" : "seniorfee.clerk@hmcts.net",
-        "forename" : "James",
-        "id" : 365752,
-        "roles" : ["bar-senior-clerk"],
-        "surname" : "Black"
-    },
-    {
-        "defaultService" : "BAR",
-        "email" : "barpreprodsrfeeclerk@mailinator.com",
-        "forename" : "krishna",
-        "id" : 365759,
-        "roles" : ["bar-senior-clerk"],
-        "surname" : "Srfeeclerk"
-    },
-    {
-        "defaultService" : "BAR",
-        "email" : "delivery.manager@hmcts.net",
-        "forename" : "Dee",
-        "id" : 365753,
-        "roles" : ["bar-delivery-manager"],
-        "surname" : "Aliu"
-    },
-    {
-        "defaultService" : "BAR",
-        "email" : "seniorfee.clerk2@hmcts.net",
-        "forename" : "James2",
-        "id" : 365756,
-        "roles" : ["bar-senior-clerk"],
-        "surname" : "Black2"
-    },
-    {
-        "defaultService" : "BAR",
-        "email" : "barpreprod@mailinator.com",
-        "forename" : "PreProd",
-        "id" : 365760,
-        "roles" : ["bar-delivery-manager"],
-        "surname" : "Admin"
-    },
-    {
-        "defaultService" : "BAR",
-        "email" : "post.clerk.bromley@hmcts.net",
-        "forename" : "Chris-Post",
-        "id" : 375750,
-        "roles" : ["bar-post-clerk"],
-        "surname" : "Bromley"
-    },
-    {
-        "defaultService" : "BAR",
-        "email" : "fee.clerk.bromley@hmcts.net",
-        "forename" : "Karen-Fee",
-        "id" : 375751,
-        "roles" : ["bar-fee-clerk"],
-        "surname" : "Bromley"
-    },
-    {
-        "defaultService" : "BAR",
-        "email" : "seniorfee.clerk.bromley@hmcts.net",
-        "forename" : "James-Senior",
-        "id" : 375752,
-        "roles" : ["bar-senior-clerk"],
-        "surname" : "Bromley"
-    },
-    {
-        "defaultService" : "BAR",
-        "email" : "delivery.manager.bromley@hmcts.net",
-        "forename" : "Dee-DM",
-        "id" : 375753,
-        "roles" : ["bar-delivery-manager"],
-        "surname" : "Bromley"
-    },
-    {
-        "defaultService" : "BAR",
-        "email" : "post.clerk.milton@hmcts.net",
-        "forename" : "Chris-Post",
-        "id" : 375754,
-        "roles" : ["bar-post-clerk"],
-        "surname" : "Milton"
-    },
-    {
-        "defaultService" : "BAR",
-        "email" : "fee.clerk.milton@hmcts.net",
-        "forename" : "Karen-Fee",
-        "id" : 375755,
-        "roles" : ["bar-fee-clerk"],
-        "surname" : "Milton"
-    },
-    {
-        "defaultService" : "BAR",
-        "email" : "seniorfee.clerk.milton@hmcts.net",
-        "forename" : "James-Senior",
-        "id" : 375756,
-        "roles" : ["bar-senior-clerk"],
-        "surname" : "Milton"
-    },
-    {
-        "defaultService" : "BAR",
-        "email" : "delivery.manager.milton@hmcts.net",
-        "forename" : "Dee-DM",
-        "id" : 375757,
-        "roles" : ["bar-delivery-manager"],
-        "surname" : "Milton"
-    },
-    {
-        "defaultService" : "BAR",
-        "email" : "barsrfeeclerksite2@mailnesia.com",
-        "forename" : "Senior FeeClerk",
-        "id" : 375758,
-        "roles" : ["bar-senior-clerk"],
-        "surname" : "Milton"
-    },
-    {
-        "defaultService" : "BAR",
-        "email" : "barfeeclerksite2@mailnesia.com",
-        "forename" : "FeeClerk",
-        "id" : 375759,
-        "roles" : ["bar-fee-clerk"],
-        "surname" : "Milton"
-    },
-    {
-        "defaultService" : "BAR",
-        "email" : "barpostsite2@mailnesia.com",
-        "forename" : "PostClerk",
-        "id" : 375760,
-        "roles" : ["bar-post-clerk"],
-        "surname" : "Milton"
-    }
+  {
+    "defaultService": "BAR",
+    "email": "post.clerk@hmcts.net",
+    "forename": "Chris",
+    "id": 365750,
+    "roles": [
+      "bar-post-clerk"
+    ],
+    "surname": "Spencer"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "barpreprodpostclerk@mailinator.com",
+    "forename": "Anjani",
+    "id": 365757,
+    "roles": [
+      "bar-post-clerk"
+    ],
+    "surname": "PostClerk"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "fee.clerk@hmcts.net",
+    "forename": "Karen",
+    "id": 365751,
+    "roles": [
+      "bar-fee-clerk"
+    ],
+    "surname": "Taylor"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "barpreprodfeeclerk@mailinator.com",
+    "forename": "Anish",
+    "id": 365758,
+    "roles": [
+      "bar-fee-clerk"
+    ],
+    "surname": "feeclerk"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "seniorfee.clerk@hmcts.net",
+    "forename": "James",
+    "id": 365752,
+    "roles": [
+      "bar-senior-clerk"
+    ],
+    "surname": "Black"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "barpreprodsrfeeclerk@mailinator.com",
+    "forename": "krishna",
+    "id": 365759,
+    "roles": [
+      "bar-senior-clerk"
+    ],
+    "surname": "Srfeeclerk"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "delivery.manager@hmcts.net",
+    "forename": "Dee",
+    "id": 365753,
+    "roles": [
+      "bar-delivery-manager"
+    ],
+    "surname": "Aliu"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "seniorfee.clerk2@hmcts.net",
+    "forename": "James2",
+    "id": 365756,
+    "roles": [
+      "bar-senior-clerk"
+    ],
+    "surname": "Black2"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "barpreprod@mailinator.com",
+    "forename": "PreProd",
+    "id": 365760,
+    "roles": [
+      "bar-delivery-manager"
+    ],
+    "surname": "Admin"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "post.clerk.bromley@hmcts.net",
+    "forename": "Chris-Post",
+    "id": 375750,
+    "roles": [
+      "bar-post-clerk"
+    ],
+    "surname": "Bromley"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "fee.clerk.bromley@hmcts.net",
+    "forename": "Karen-Fee",
+    "id": 375751,
+    "roles": [
+      "bar-fee-clerk"
+    ],
+    "surname": "Bromley"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "seniorfee.clerk.bromley@hmcts.net",
+    "forename": "James-Senior",
+    "id": 375752,
+    "roles": [
+      "bar-senior-clerk"
+    ],
+    "surname": "Bromley"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "delivery.manager.bromley@hmcts.net",
+    "forename": "Dee-DM",
+    "id": 375753,
+    "roles": [
+      "bar-delivery-manager"
+    ],
+    "surname": "Bromley"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "post.clerk.milton@hmcts.net",
+    "forename": "Chris-Post",
+    "id": 375754,
+    "roles": [
+      "bar-post-clerk"
+    ],
+    "surname": "Milton"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "fee.clerk.milton@hmcts.net",
+    "forename": "Karen-Fee",
+    "id": 375755,
+    "roles": [
+      "bar-fee-clerk"
+    ],
+    "surname": "Milton"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "seniorfee.clerk.milton@hmcts.net",
+    "forename": "James-Senior",
+    "id": 375756,
+    "roles": [
+      "bar-senior-clerk"
+    ],
+    "surname": "Milton"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "delivery.manager.milton@hmcts.net",
+    "forename": "Dee-DM",
+    "id": 375757,
+    "roles": [
+      "bar-delivery-manager"
+    ],
+    "surname": "Milton"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "barsrfeeclerksite2@mailnesia.com",
+    "forename": "Senior FeeClerk",
+    "id": 375758,
+    "roles": [
+      "bar-senior-clerk"
+    ],
+    "surname": "Milton"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "barfeeclerksite2@mailnesia.com",
+    "forename": "FeeClerk",
+    "id": 375759,
+    "roles": [
+      "bar-fee-clerk"
+    ],
+    "surname": "Milton"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "barpostsite2@mailnesia.com",
+    "forename": "PostClerk",
+    "id": 375760,
+    "roles": [
+      "bar-post-clerk"
+    ],
+    "surname": "Milton"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "site2feeclerk@mailinator.com",
+    "forename": "FeeClerkSite2",
+    "id": 375761,
+    "roles": [
+      "bar-fee-clerk"
+    ],
+    "surname": "Milton"
+  }
 ]
