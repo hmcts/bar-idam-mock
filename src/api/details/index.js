@@ -71,7 +71,7 @@ export default ({ config, db }) => {
   });
 
   api.post('/payment-records', (req, res) => {
-    console.log(req.body.payment_method);
+    console.log(req.body);
     if (req.body.payment_method === 'ALLPAY'){
       res.status(400).send({
         "timestamp": "2018-09-04T15:37:18.914+0000",
@@ -89,6 +89,11 @@ export default ({ config, db }) => {
       });
     }
   });
+
+  api.post('/remission', (req, res) => {
+    console.log(req.body);
+    res.status(201).send("RM-1555-3390-9530-6022");
+  });
   
   api.get('/jurisdictions1', (req,res) => {
     fs.readFile('./resources/jurisdiction1.json', function (err, data) {
@@ -104,6 +109,10 @@ export default ({ config, db }) => {
       let fees = JSON.parse(data);
       res.json(fees);
     });
+  });
+
+  api.get('/health', (req, res) => {
+    res.status(200).send({ status: 'UP'})
   });
 
   return api;
