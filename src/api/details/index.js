@@ -13,6 +13,7 @@ export default ({ config, db }) => {
     }
     console.log('token:' + token);
     const user = db.find(token);
+    console.log('user: ' + user);
     if (!user) {
       res.status(403).send('Unauthorized');
     }
@@ -92,7 +93,17 @@ export default ({ config, db }) => {
 
   api.post('/remission', (req, res) => {
     console.log(req.body);
-    res.status(201).send("RM-1555-3390-9530-6022");
+    res.status(201).send({
+      "remission_reference": "RM-1559-2207-2143-1903",
+      "payment_group_reference": "2019-15592207213",
+      "fee": {
+        "id": 67383,
+        "code": "FEE00007",
+        "version": "3",
+        "volume": 1,
+        "calculated_amount": 550
+      }
+    });
   });
   
   api.get('/jurisdictions1', (req,res) => {
@@ -111,7 +122,7 @@ export default ({ config, db }) => {
     });
   });
 
-  api.get('/health', (req, res) => {
+  api.get('/health**', (req, res) => {
     res.status(200).send({ status: 'UP'})
   });
 

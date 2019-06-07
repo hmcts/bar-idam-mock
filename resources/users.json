@@ -3,7 +3,7 @@
     "defaultService": "BAR",
     "email": "post.clerk@hmcts.net",
     "forename": "Chris",
-    "id": 365750,
+    "id": 365741,
     "roles": [
       "bar-post-clerk"
     ],
@@ -13,7 +13,7 @@
     "defaultService": "BAR",
     "email": "barpreprodpostclerk@mailinator.com",
     "forename": "Anjani",
-    "id": 365757,
+    "id": 365742,
     "roles": [
       "bar-post-clerk"
     ],
@@ -23,7 +23,7 @@
     "defaultService": "BAR",
     "email": "fee.clerk@hmcts.net",
     "forename": "Karen",
-    "id": 365751,
+    "id": 365743,
     "roles": [
       "bar-fee-clerk"
     ],
@@ -33,7 +33,7 @@
     "defaultService": "BAR",
     "email": "barpreprodfeeclerk@mailinator.com",
     "forename": "Anish",
-    "id": 365758,
+    "id": 365744,
     "roles": [
       "bar-fee-clerk"
     ],
@@ -43,7 +43,7 @@
     "defaultService": "BAR",
     "email": "seniorfee.clerk@hmcts.net",
     "forename": "James",
-    "id": 365752,
+    "id": 365745,
     "roles": [
       "bar-senior-clerk"
     ],
@@ -53,7 +53,7 @@
     "defaultService": "BAR",
     "email": "barpreprodsrfeeclerk@mailinator.com",
     "forename": "krishna",
-    "id": 365759,
+    "id": 365746,
     "roles": [
       "bar-senior-clerk"
     ],
@@ -63,7 +63,7 @@
     "defaultService": "BAR",
     "email": "delivery.manager@hmcts.net",
     "forename": "Dee",
-    "id": 365753,
+    "id": 365747,
     "roles": [
       "bar-delivery-manager"
     ],
@@ -73,7 +73,7 @@
     "defaultService": "BAR",
     "email": "seniorfee.clerk2@hmcts.net",
     "forename": "James2",
-    "id": 365756,
+    "id": 365748,
     "roles": [
       "bar-senior-clerk"
     ],
@@ -83,7 +83,7 @@
     "defaultService": "BAR",
     "email": "barpreprod@mailinator.com",
     "forename": "PreProd",
-    "id": 365760,
+    "id": 365749,
     "roles": [
       "bar-delivery-manager"
     ],
@@ -208,5 +208,55 @@
       "bar-fee-clerk"
     ],
     "surname": "Milton"
+  },
+  {
+    "defaultService": "PAYMENTS",
+    "email": "krishnakn00@gmail.com",
+    "forename": "pay",
+    "id": "11536d15-93ee-4149-a2b0-d60ff7ef42f7",
+    "roles": [
+      "payments","caseworker"
+    ],
+    "surname": "bubble"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "SiteSwitchDM@mailnesia.com",
+    "forename": "Multisite",
+    "id": 365762,
+    "roles": [
+      "bar-delivery-manager"
+    ],
+    "surname": "Delivery Manager"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "SiteSwitchFee@mailnesia.com",
+    "forename": "Multisite",
+    "id": 375763,
+    "roles": [
+      "bar-fee-clerk"
+    ],
+    "surname": "Fee Clerk"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "SiteSwitchSrFee@mailnesia.com",
+    "forename": "Multisite",
+    "id": 375764,
+    "roles": [
+      "bar-senior-clerk"
+    ],
+    "surname": "Senior Clerk"
+  },
+  {
+    "defaultService": "BAR",
+    "email": "SiteSwitchPost@mailnesia.com",
+    "forename": "Multisite",
+    "id": 375765,
+    "roles": [
+      "bar-post-clerk"
+    ],
+    "surname": "Post Clerk"
   }
 ]
