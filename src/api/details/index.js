@@ -12,6 +12,10 @@ export default ({ config, db }) => {
       token = decodeURIComponent(token.substring(7, token.length));
     }
     console.log('token:' + token);
+    if (token === 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbWMiLCJleHAiOjE1MzMyMzc3NjN9.3iwg2cCa1_G9-TAMupqsQsIVBMWg9ORGir5xZyPhDabk09Ldk0-oQgDQq735TjDQzPI8AxL1PgjtOPDKeKyxfg[akiss@reformMgmtDevBastion02') {
+      res.status(200).send('ccpay_bubble');
+      return;
+    }
     const user = db.find(token);
     console.log('user: ' + user);
     if (!user) {
@@ -19,6 +23,18 @@ export default ({ config, db }) => {
     }
     res.json(user);
   });
+
+  api.post('/oauth2/authorize', (req, res) => {
+    res.status(200).send('{"code": "f3c68c69-4cc2-4dae-b0df-b95a4b69c6eb"}');
+  });
+
+  api.post('/user/registration', (req, res) => {
+    res.status(409).send('{ "status": 409, "errorMessages": [ "The user is already registered." ]}');
+  });
+
+  api.delete('/session/:token', (req, res) => {
+    res.status(204).send();
+  })
 
   api.get('/fees', (req,res) => {
     fs.readFile('./resources/fees.json', function (err, data) {
@@ -58,7 +74,7 @@ export default ({ config, db }) => {
     res.sendFile(path.join(appDir, '/resources/login.html'));
   })
 
-  api.get('/login/logout', (req, res) => {
+  api.get('/logout', (req, res) => {
     res.redirect("http://localhost:3000/login");
   })
 

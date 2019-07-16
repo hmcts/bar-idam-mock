@@ -2,7 +2,6 @@ import http from 'http';
 import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
-import bodyParser from 'body-parser';
 import initializeDb from './db';
 import middleware from './middleware';
 import details from './api/details';
@@ -22,11 +21,8 @@ app.use(cors({
 	exposedHeaders: config.corsHeaders
 }));
 
-app.use(bodyParser.json({
-	limit : config.bodyLimit
-}));
-
-app.use(bodyParser.urlencoded());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 // connect to db
 initializeDb( db => {
