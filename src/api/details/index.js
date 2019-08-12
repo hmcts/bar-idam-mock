@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import fs from 'fs';
+import fs, { stat } from 'fs';
 import path from 'path'
 
 export default ({ config, db }) => {
@@ -25,7 +25,8 @@ export default ({ config, db }) => {
   });
 
   api.post('/oauth2/authorize', (req, res) => {
-    res.status(200).send('{"code": "f3c68c69-4cc2-4dae-b0df-b95a4b69c6eb"}');
+    res.setHeader('content-type', 'application/json');
+    res.status(200).send('{"code": "f3c68c69-4cc2-4dae-b0df-b95a4b69c6eb", "defaultUrl": "", "accessToken": ""}');
   });
 
   api.post('/user/registration', (req, res) => {
@@ -79,8 +80,8 @@ export default ({ config, db }) => {
   })
 
   api.post('/oauth2/token', (req, res) => {
-    console.log(req.body);
-    res.json({access_token: req.body.code});
+    console.log(req.query);
+    res.json({access_token: req.query.code});
   });
 
   api.post('/lease', (req, res) => {
@@ -140,6 +141,22 @@ export default ({ config, db }) => {
 
   api.get('/health**', (req, res) => {
     res.status(200).send({ status: 'UP'})
+  });
+
+  api.get('/cases/:caseref', (req, res) => {
+    let status = 200;
+    if(req.params.caseref.includes('1234')) {
+      status = 404;
+    }
+    res.status(status).send();
+  });
+
+  api.post('/searchCases**', (req, res) => {
+    fs.readFile('./resources/ccd_search_result.json', function (err, data) {
+      if (err) throw err;
+      let resp = JSON.parse(data);
+      res.json(resp);
+    });
   });
 
   return api;
