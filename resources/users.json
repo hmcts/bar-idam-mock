@@ -211,13 +211,14 @@
   },
   {
     "defaultService": "PAYMENTS",
-    "email": "krishnakn00@gmail.com",
-    "forename": "pay",
-    "id": "11536d15-93ee-4149-a2b0-d60ff7ef42f7",
+    "sub": "krishnakn00@gmail.com",
+    "name": "pay bubble",
+    "given_name": "pay",
+    "uid": "11536d15-93ee-4149-a2b0-d60ff7ef42f7",
     "roles": [
       "payments","caseworker"
     ],
-    "surname": "bubble"
+    "family_name": "bubble"
   },
   {
     "defaultService": "BAR",
