@@ -11,6 +11,24 @@ export default ({ config, db }) => {
     if (token && token.startsWith('Bearer ')){
       token = decodeURIComponent(token.substring(7, token.length));
     }
+
+    if (token === 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbWMiLCJleHAiOjE1MzMyMzc3NjN9.3iwg2cCa1_G9-TAMupqsQsIVBMWg9ORGir5xZyPhDabk09Ldk0-oQgDQq735TjDQzPI8AxL1PgjtOPDKeKyxfg[akiss@reformMgmtDevBastion02') {
+      res.status(200).send('ccpay_bubble');
+      return;
+    }
+    const user = db.find(token);
+    console.log('user: ' + user);
+    if (!user) {
+      res.status(403).send('Unauthorized');
+    }
+    res.json(user);
+  });
+
+  api.get('/o/userinfo', (req, res) => {
+    let token = req.header('Authorization');
+    if (token && token.startsWith('Bearer ')){
+      token = decodeURIComponent(token.substring(7, token.length));
+    }
     console.log('token:' + token);
     if (token === 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbWMiLCJleHAiOjE1MzMyMzc3NjN9.3iwg2cCa1_G9-TAMupqsQsIVBMWg9ORGir5xZyPhDabk09Ldk0-oQgDQq735TjDQzPI8AxL1PgjtOPDKeKyxfg[akiss@reformMgmtDevBastion02') {
       res.status(200).send('ccpay_bubble');
@@ -25,6 +43,11 @@ export default ({ config, db }) => {
   });
 
   api.post('/oauth2/authorize', (req, res) => {
+    res.setHeader('content-type', 'application/json');
+    res.status(200).send('{"code": "f3c68c69-4cc2-4dae-b0df-b95a4b69c6eb", "defaultUrl": "", "accessToken": ""}');
+  });
+
+  api.post('/o/authorize', (req, res) => {
     res.setHeader('content-type', 'application/json');
     res.status(200).send('{"code": "f3c68c69-4cc2-4dae-b0df-b95a4b69c6eb", "defaultUrl": "", "accessToken": ""}');
   });
@@ -82,6 +105,15 @@ export default ({ config, db }) => {
   api.post('/oauth2/token', (req, res) => {
     console.log(req.query);
     res.json({access_token: req.query.code});
+  });
+
+  api.post('/o/token', (req, res) => {
+    console.log(req.query);
+    res.json({
+      access_token: req.query.code,
+      id_token: req.query.code,
+      refresh_token: req.query.code
+    });
   });
 
   api.post('/lease', (req, res) => {

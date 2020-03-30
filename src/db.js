@@ -5,7 +5,7 @@ export default callback => {
 		var bin = {};
 		return ({
 			insert: function(value){
-				let key = value.email;
+				let key = value.sub;
 				storage[key] = value;
 				return key;
 			},
@@ -14,8 +14,8 @@ export default callback => {
 					return storage[key];
 				});
 			},
-			find: function(email){
-				return storage[email];
+			find: function(sub){
+				return storage[sub];
 			}
 		});		
 	})();

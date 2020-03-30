@@ -1,7 +1,7 @@
 [
   {
     "defaultService": "BAR",
-    "email": "post.clerk@hmcts.net",
+    "sub": "post.clerk@hmcts.net",
     "given_name": "Chris",
     "uid": 365741,
     "roles": [
@@ -11,7 +11,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "barpreprodpostclerk@mailinator.com",
+    "sub": "barpreprodpostclerk@mailinator.com",
     "given_name": "Anjani",
     "uid": 365742,
     "roles": [
@@ -21,7 +21,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "fee.clerk@hmcts.net",
+    "sub": "fee.clerk@hmcts.net",
     "given_name": "Karen",
     "uid": 365743,
     "roles": [
@@ -41,7 +41,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "seniorfee.clerk@hmcts.net",
+    "sub": "seniorfee.clerk@hmcts.net",
     "given_name": "James",
     "uid": 365745,
     "roles": [
@@ -51,7 +51,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "barpreprodsrfeeclerk@mailinator.com",
+    "sub": "barpreprodsrfeeclerk@mailinator.com",
     "given_name": "krishna",
     "uid": 365746,
     "roles": [
@@ -61,7 +61,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "delivery.manager@hmcts.net",
+    "sub": "delivery.manager@hmcts.net",
     "given_name": "Dee",
     "uid": 365747,
     "roles": [
@@ -71,7 +71,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "seniorfee.clerk2@hmcts.net",
+    "sub": "seniorfee.clerk2@hmcts.net",
     "given_name": "James2",
     "uid": 365748,
     "roles": [
@@ -81,7 +81,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "barpreprod@mailinator.com",
+    "sub": "barpreprod@mailinator.com",
     "given_name": "PreProd",
     "uid": 365749,
     "roles": [
@@ -91,7 +91,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "post.clerk.bromley@hmcts.net",
+    "sub": "post.clerk.bromley@hmcts.net",
     "given_name": "Chris-Post",
     "uid": 375750,
     "roles": [
@@ -101,7 +101,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "fee.clerk.bromley@hmcts.net",
+    "sub": "fee.clerk.bromley@hmcts.net",
     "given_name": "Karen-Fee",
     "uid": 375751,
     "roles": [
@@ -111,7 +111,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "seniorfee.clerk.bromley@hmcts.net",
+    "sub": "seniorfee.clerk.bromley@hmcts.net",
     "given_name": "James-Senior",
     "uid": 375752,
     "roles": [
@@ -121,7 +121,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "delivery.manager.bromley@hmcts.net",
+    "sub": "delivery.manager.bromley@hmcts.net",
     "given_name": "Dee-DM",
     "uid": 375753,
     "roles": [
@@ -131,7 +131,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "post.clerk.milton@hmcts.net",
+    "sub": "post.clerk.milton@hmcts.net",
     "given_name": "Chris-Post",
     "uid": 375754,
     "roles": [
@@ -141,7 +141,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "fee.clerk.milton@hmcts.net",
+    "sub": "fee.clerk.milton@hmcts.net",
     "given_name": "Karen-Fee",
     "uid": 375755,
     "roles": [
@@ -151,7 +151,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "seniorfee.clerk.milton@hmcts.net",
+    "sub": "seniorfee.clerk.milton@hmcts.net",
     "given_name": "James-Senior",
     "uid": 375756,
     "roles": [
@@ -161,7 +161,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "delivery.manager.milton@hmcts.net",
+    "sub": "delivery.manager.milton@hmcts.net",
     "given_name": "Dee-DM",
     "uid": 375757,
     "roles": [
@@ -171,7 +171,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "barsrfeeclerksite2@mailnesia.com",
+    "sub": "barsrfeeclerksite2@mailnesia.com",
     "given_name": "Senior FeeClerk",
     "uid": 375758,
     "roles": [
@@ -181,7 +181,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "barfeeclerksite2@mailnesia.com",
+    "sub": "barfeeclerksite2@mailnesia.com",
     "given_name": "FeeClerk",
     "uid": 375759,
     "roles": [
@@ -191,7 +191,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "barpostsite2@mailnesia.com",
+    "sub": "barpostsite2@mailnesia.com",
     "given_name": "PostClerk",
     "uid": 375760,
     "roles": [
@@ -201,7 +201,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "site2feeclerk@mailinator.com",
+    "sub": "site2feeclerk@mailinator.com",
     "given_name": "FeeClerkSite2",
     "uid": 375761,
     "roles": [
@@ -211,7 +211,7 @@
   },
   {
     "defaultService": "PAYMENTS",
-    "email": "krishnakn00@gmail.com",
+    "sub": "krishnakn00@gmail.com",
     "given_name": "pay",
     "uid": "11536d15-93ee-4149-a2b0-d60ff7ef42f7",
     "roles": [
@@ -221,7 +221,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "SiteSwitchDM@mailnesia.com",
+    "sub": "SiteSwitchDM@mailnesia.com",
     "given_name": "Multisite",
     "uid": 365762,
     "roles": [
@@ -231,7 +231,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "SiteSwitchFee@mailnesia.com",
+    "sub": "SiteSwitchFee@mailnesia.com",
     "given_name": "Multisite",
     "uid": 375763,
     "roles": [
@@ -241,7 +241,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "SiteSwitchSrFee@mailnesia.com",
+    "sub": "SiteSwitchSrFee@mailnesia.com",
     "given_name": "Multisite",
     "uid": 375764,
     "roles": [
@@ -251,7 +251,7 @@
   },
   {
     "defaultService": "BAR",
-    "email": "SiteSwitchPost@mailnesia.com",
+    "sub": "SiteSwitchPost@mailnesia.com",
     "given_name": "Multisite",
     "uid": 375765,
     "roles": [
