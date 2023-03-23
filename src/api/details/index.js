@@ -88,6 +88,26 @@ export default ({ config, db }) => {
     res.send('eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbWMiLCJleHAiOjE1MzMyMzc3NjN9.3iwg2cCa1_G9-TAMupqsQsIVBMWg9ORGir5xZyPhDabk09Ldk0-oQgDQq735TjDQzPI8AxL1PgjtOPDKeKyxfg[akiss@reformMgmtDevBastion02');
   });
 
+  api.get('/o/jwks', (req, res) => {
+    res.setHeader('content-type', 'application/json');
+    res.status(200).send('{"keys": [{"kty": "RSA","kid": "123459876", "n": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAveB8g85P/5krFVOv/0qv\nEtGq+JGFl1rU0s30vIun3wBb601XgeIpHBhpXs7O0d+CbqsbIWBXfKk0b5Pp0BYQ\nDr3NX1A0OSgFjFOvndLzalf7pfPAuM67RP2gQGX2raBZsM9HQJtu/6sAaO4y3TXp\nsPLsZ8vzncH1bFTBQE5TFDcXrrKGDR0Y0zEVifYgKW3o3iC+pCcUmwa6BR8WeOJd\n1HNPkocEw8GUnJdLsKTHCzHDT5EppfsKlaHD/poqFznwMKpTZtBRSF4FUCc+fUnT\nQoiVFGhmrQEVW9Sb9Zy4Am/TgUmobFCO90CIp9sggMLyJCnMt9h5A5xivCUPNiZW\nIwIDAQAB","e": "AQAB","alg" : "RS256"}]}');
+  });
+
+  api.post('/o/token', (req, res) => {
+    res.setHeader('content-type', 'application/json');
+    res.status(200).send('{"access_token":"MockOauth2TokenForLocaldevelopmentnTQ0NjJkZmQ5OTM2NDE1ZTZjNGZmZjI3","token_type":"bearer", "expires_in":35999, "scope":"openid profile roles"}');
+  });
+
+  api.post('/o/authorize', (req, res) => {
+    res.setHeader('content-type', 'application/json');
+    res.status(200).send('{"code": "f3c68c69-4cc2-4dae-b0df-b95a4b69c6eb", "defaultUrl": "", "accessToken": ""}');
+  });
+
+  api.get('/o/.well-known/openid-configuration', (req, res) => {
+    res.setHeader('content-type', 'application/json');
+    res.status(200).send('{"issuer": "http://localhost:23443/o", "jwks_uri": "http://localhost:23443/o/jwks","authorization_endpoint": "http://localhost:23443/o/authorize", "token_endpoint": "http://localhost:23443/o/token","userinfo_endpoint": "http://localhost:23443/o/userinfo", "subject_types_supported": ["public"],"id_token_signing_alg_values_supported": ["ES384"], "request_object_signing_alg_values_supported":["ES384"],"request_object_encryption_alg_values_supported": ["RSA-OAEP"], "rcs_response_signing_alg_values_supported":["PS384"]}');
+   });
+
   api.post('/payment-records', (req, res) => {
     console.log(req.body);
     if (req.body.payment_method === 'ALLPAY'){
