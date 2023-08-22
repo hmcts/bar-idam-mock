@@ -90,7 +90,7 @@ export default ({ config, db }) => {
 
   api.get('/o/jwks', (req, res) => {
     res.setHeader('content-type', 'application/json');
-    res.status(200).send('{"keys": [{"kty": "RSA","kid": "123459876", "n": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAveB8g85P/5krFVOv/0qv\nEtGq+JGFl1rU0s30vIun3wBb601XgeIpHBhpXs7O0d+CbqsbIWBXfKk0b5Pp0BYQ\nDr3NX1A0OSgFjFOvndLzalf7pfPAuM67RP2gQGX2raBZsM9HQJtu/6sAaO4y3TXp\nsPLsZ8vzncH1bFTBQE5TFDcXrrKGDR0Y0zEVifYgKW3o3iC+pCcUmwa6BR8WeOJd\n1HNPkocEw8GUnJdLsKTHCzHDT5EppfsKlaHD/poqFznwMKpTZtBRSF4FUCc+fUnT\nQoiVFGhmrQEVW9Sb9Zy4Am/TgUmobFCO90CIp9sggMLyJCnMt9h5A5xivCUPNiZW\nIwIDAQAB","e": "AQAB","alg" : "RS256"}]}');
+    res.status(200).send('{"keys": [{"kty": "RSA","kid": "123459876", "n": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAveB8g85P/5krFVOv/0qvEtGq+JGFl1rU0s30vIun3wBb601XgeIpHBhpXs7O0d+CbqsbIWBXfKk0b5Pp0BYQDr3NX1A0OSgFjFOvndLzalf7pfPAuM67RP2gQGX2raBZsM9HQJtu/6sAaO4y3TXpsPLsZ8vzncH1bFTBQE5TFDcXrrKGDR0Y0zEVifYgKW3o3iC+pCcUmwa6BR8WeOJd1HNPkocEw8GUnJdLsKTHCzHDT5EppfsKlaHD/poqFznwMKpTZtBRSF4FUCc+fUnTQoiVFGhmrQEVW9Sb9Zy4Am/TgUmobFCO90CIp9sggMLyJCnMt9h5A5xivCUPNiZWIwIDAQAB","e": "AQAB","alg" : "RS256"}]}');
   });
 
   api.post('/o/token', (req, res) => {
