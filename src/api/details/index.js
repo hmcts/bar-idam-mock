@@ -98,6 +98,11 @@ export default ({ config, db }) => {
     res.status(200).send('{"access_token":"MockOauth2TokenForLocaldevelopmentnTQ0NjJkZmQ5OTM2NDE1ZTZjNGZmZjI3","token_type":"bearer", "expires_in":35999, "scope":"openid profile roles"}');
   });
 
+    api.get('/o/userinfo', (req, res) => {
+        res.setHeader('content-type', 'application/json');
+        res.status(200).send('{"email": "krishnakn00@gmail.com","roles": ["payments","caseworker"],"sub": "krishnakn00@gmail.com","uid": "11536d15-93ee-4149-a2b0-d60ff7ef42f7"}');
+    });
+
   api.post('/o/authorize', (req, res) => {
     res.setHeader('content-type', 'application/json');
     res.status(200).send('{"code": "f3c68c69-4cc2-4dae-b0df-b95a4b69c6eb", "defaultUrl": "", "accessToken": ""}');
