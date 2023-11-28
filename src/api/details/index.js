@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import fs, { stat } from 'fs';
+import jwtDecode from 'jwt-decode';
 import path from 'path'
 
 export default ({ config, db }) => {
@@ -8,15 +9,15 @@ export default ({ config, db }) => {
 
   api.get('/details', (req, res) => {
     let token = req.header('Authorization');
-    if (token && token.startsWith('Bearer ')){
-      token = decodeURIComponent(token.substring(7, token.length));
-    }
-    console.log('token:' + token);
+    let decodedToken = jwtDecode(token);
+    console.log('decodedToken:' + JSON.stringify(decodedToken));
+    let email = decodedToken.sub;
+
     if (token === 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbWMiLCJleHAiOjE1MzMyMzc3NjN9.3iwg2cCa1_G9-TAMupqsQsIVBMWg9ORGir5xZyPhDabk09Ldk0-oQgDQq735TjDQzPI8AxL1PgjtOPDKeKyxfg[akiss@reformMgmtDevBastion02') {
       res.status(200).send('ccpay_bubble');
       return;
     }
-    const user = db.find(token);
+    const user = db.find(email);
     console.log('user: ' + user);
     if (!user) {
       res.status(403).send('Unauthorized');
